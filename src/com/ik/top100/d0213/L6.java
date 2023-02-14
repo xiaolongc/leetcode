@@ -1,4 +1,4 @@
-package com.ik.top100;
+package com.ik.top100.d0213;
 
 public class L6 {
     public String convert(String s, int numRows) {
