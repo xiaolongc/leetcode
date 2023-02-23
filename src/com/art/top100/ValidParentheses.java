@@ -20,7 +20,7 @@ public class ValidParentheses {
         }
     }
 
-    public static   boolean isValid(String s) {
+    public static boolean isValid(String s) {
         int length = s.length();
         if (length == 1) {
             return false;

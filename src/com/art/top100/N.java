@@ -12,11 +12,11 @@ import java.util.ArrayList;
  */
 public class N {
     public static String convert(String s, int numRows) {
-        if(numRows < 2) return s;
+        if (numRows < 2) return s;
         ArrayList<StringBuilder> rows = new ArrayList<StringBuilder>();
-        for(int i = 0; i < numRows; i++) rows.add(new StringBuilder());
+        for (int i = 0; i < numRows; i++) rows.add(new StringBuilder());
         int i = 0, flag = -1;
-        for(char c : s.toCharArray()) {
+        for (char c : s.toCharArray()) {
             rows.get(i).append(c);
             /**
              *  00  10 20  30  40  31  21  11  01   12  22  32
@@ -28,13 +28,13 @@ public class N {
              *                  5
              *
              */
-            if(i == 0 || i == numRows -1){
-                flag = - flag;
+            if (i == 0 || i == numRows - 1) {
+                flag = -flag;
             }
             i += flag;
         }
         StringBuilder res = new StringBuilder();
-        for(StringBuilder row : rows) res.append(row);
+        for (StringBuilder row : rows) res.append(row);
         return res.toString();
     }
 
