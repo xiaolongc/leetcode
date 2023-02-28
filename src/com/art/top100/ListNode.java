@@ -7,7 +7,7 @@ public class ListNode {
     public ListNode() {
     }
 
-    ListNode(int val) {
+    public ListNode(int val) {
         this.val = val;
     }
 
@@ -18,10 +18,10 @@ public class ListNode {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("ListNode{");
-        sb.append("val=").append(val);
-        sb.append(", next=").append(next);
-        sb.append('}');
+        final StringBuffer sb = new StringBuffer("");
+        sb.append("").append(val);
+        sb.append(",").append(next);
+        sb.append("");
         return sb.toString();
     }
 }
